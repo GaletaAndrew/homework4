@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+ <header class="header">
+    <div class="container header-container">
+        <a href="./index.html" class="head"><span class="head-color">Web</span>Studio</a>
+        <nav>
+            <ul class="header-list list">
+                <li><a href="./index.html" class="header-link link">Студия</a></li>
+                <li><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
+                <li><a href="#" class="header-link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-cont">
+        <ul class="header-list list">
+            <li class="header-icon">
+                <a href="" class="header-icon-link link">
+                    <svg class="icon-head" width=16px height=12px>
+                        <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="header-nav link header-mail"> info@devstudio.com</a>
+            </li>
+            <li class="header-icon">
+                <a href="" class="header-icon-link link">
+                    <svg class="icon head" width=10px height=16px>
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+380961111111" class="header-nav link header-number">+38 096 111 11 11</a>
+            </li>
+        </ul>
+        </div>
+    </div> 
+ </header>
+ <main>
+ <section class="section1">
+    <div class="container hero-container">
+        <h1 class="header1">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="header-button">Заказать услуги</button>
+    </div>
+ </section>
+ <section class="section-character">
+    <div class="container">
+        <h2 class="visually-hidden">Наши особенности</h2>
+        <ul class="speclist list">
+            <li>
+                <svg class="speclist-icon">
+                    <use
+                    href="./images/symbol-defs.svg#icon-antenna-1" width="70" height="70">
+                    </use>
+                </svg>
+                <h3 class="characteristic">Внимание к деталям</h3>
+                <p class="characteristic-par">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+            </li>
+            <li>
+                <svg class="speclist-icon">
+                    <use href="./images/symbol-defs.svg#icon-clock-1" width="70" height="70">
+                    </use>
+                </svg>
+                <h3 class="characteristic">Пунктуальность</h3>
+                <p class="characteristic-par">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                    собой.</p>
+            </li>
+            <li>
+                <svg class="speclist-icon">
+                    <use href="./images/symbol-defs.svg#icon-diagram-1" width="70" height="70">
+                    </use>
+                </svg>
+                <h3 class="characteristic">Планирование</h3>
+                <p class="characteristic-par">Равным образом консультация с широким активом в значительной степени
+                    обуславливает.</p>
+            </li>
+            <li>
+                <svg class="speclist-icon">
+                    <use href="./images/symbol-defs.svg#icon-astronaut-1" width="70" height="70">
+                    </use>
+                </svg>
+                <h3 class="characteristic">Современные технологии</h3>
+                <p class="characteristic-par">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+        </ul>
+    </div>
+
+</section>
+ <section class="section-whatwedo">
+    <div class="container">
+        <h2 class="whatwedo">Чем мы занимаемся</h2>
+        <ul class="wedolist list">
+            <li class="wedo-img">
+                <img src="./images/box1-min.jpg" alt="Человек за комп'ютером">
+            </li>
+            <li class="wedo-img">
+                <img src="./images/box2-min.jpg" alt="Человек с телефоном">
+            </li>
+            <li class="wedo-img">
+                <img src="./images/box3-min.jpg" alt="Человек с планшетом">
+            </li>
+        </ul>
+    </div>
+ </section>
+ <section class="team-sec">
+    <div class="container">
+        <h2 class="team">Наша команда</h2>
+        <ul class="teamlist list">
+            <li class="team-pers">
+                <img src="./images/emp1-min.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <div class="team-np">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-post">Product Designer</p>
+                <ul class="team-soc list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li><li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li><li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="team-pers">
+                <img src="./images/emp2-min.jpg" alt="Ольга Репина" width="270" height="260">
+                <div class="team-np">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-post">Frontend Developer</p>
+                <ul class="team-soc list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="team-pers">
+                <img src="./images/emp3-min.jpg" alt="Николай Тарасов" width="270" height="260">
+                <div class="team-np">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-post">Marketing</p>
+                <ul class="team-soc list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="team-pers">
+                <img src="./images/emp4-min.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <div class="team-np">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-post">UI Designer</p>
+                <ul class="team-soc list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link">
+                            <svg class="barbers-soc" width=20px height=20px>
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+ </section>
+ <section class="clients">
+    <div class="container">
+        <h2 class="team">Постоянные клиенты</h2>
+        <ul class="clients-list list">
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client1" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client2" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client3" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client4" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client5" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+            <li>
+                <svg class="client-icon">
+                    <use href="./images/symbol-defs.svg#icon-client6" width="106" height="60">
+                    </use>
+                </svg>
+            </li>
+        </ul>
+    </div>
+ </section>
+ </main>
+ <footer class="section2">
+    <div class="container">
+    <a href="./index.html" class="footer-head link"><span class="head-color">Web</span>Studio</a>
+    <address class="footer-adres">
+        <ul class="footerlist list">
+            <li>
+                <a href="https://goo.gl/maps/yCuGq5iEMmN5MK3H8" class="footer-adress link" target="_blank"
+                    rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="footer-mail">
+                <a href="mailto:info@example.com" class="footer-nav link">info@example.com</a>
+            </li>
+            <li>
+                <a href="tel:+380991111111" class="footer-nav link">+38 099 111 11 11</a>
+            </li>
+        </ul>
+    </address>
+    </div>
+    <div class="container">
+        <p>Присоединяйтесь</p>
+        <ul class="footer-soc list">
+            <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                    <svg class="barfooter-soc" width=20px height=20px>
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                    <svg class="barfooter-soc" width=20px height=20px>
+                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                    <svg class="barfooter-soc" width=20px height=20px>
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-soc-item">
+                <a href="" class="footer-soc-link link">
+                    <svg class="barfooter-soc" width=20px height=20px>
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+ </footer>
+</body>
+</html>
