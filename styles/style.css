@@ -62,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header-nav{
-font-weight: 500;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -109,11 +109,14 @@ font-weight: 500;
 .header-link:focus,
 .header-nav:hover,
 .header-nav:focus,
+.header-icon:hover,
+.header-icon:focus,
 .footer-adress:hover,
 .footer-adress:focus,
 .footer-nav:hover,
 .footer-nav:focus{
     color: var(--button-color);
+    fill: #2196F3;
 }
 
 .class-item{
@@ -178,10 +181,18 @@ font-weight: 500;
 }
 
 .speclist-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+}
+
+.spec-icon{
+    width: 70px;
+    height: 70px;
 }
 
 .characteristic {
@@ -343,6 +354,14 @@ font-weight: 500;
     border-style: none solid solid solid;
 }
 
+.list-item:focus,
+.list-item:hover{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .head-btn:hover, 
 .head-btn:focus{
     color: var(--button-color);
@@ -367,6 +386,10 @@ font-weight: 500;
     background-color: var(--button-color);
     color: var(--second-color);
     cursor: pointer;
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-name{
@@ -392,15 +415,17 @@ font-weight: 500;
 }
 
 .clients{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
-.client-list:focus,
-.clienr-list:hover{
-    color: #2196F3;
+.client-link:focus,
+.client-link:hover{
+    fill: #2196F3;
+    border-color: #2196F3
 }
 
-.client-icon{
+.client-link {
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     width: 170px;
@@ -409,6 +434,12 @@ font-weight: 500;
     align-items: center;
     justify-content: center;
 }
+
+.client-icon{
+    width: 106px;
+    height: 60px;
+}
+
 
 
 .footer-head {
@@ -458,6 +489,26 @@ font-weight: 500;
     padding-bottom: 60px;
     display: flex;
 }
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-icon{
+    margin-left: 70px;
+}
+
+.icon-head{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .footer-mail{
     margin-bottom: 9px;
     margin-top: 9px;
@@ -467,6 +518,7 @@ font-weight: 500;
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .footer-soc-link {
@@ -477,6 +529,7 @@ font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: #ffffff;
 }
 
 .footer-soc-link:hover,
