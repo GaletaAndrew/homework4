@@ -85,9 +85,20 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-list{
     display: flex;
     column-gap: 50px;
+
 }
 
+.header-icon{
+    color: #757575;
+    fill: currentColor;
+    margin-right: 10px;
 
+}
+
+.header-icon:hover,
+.header-icon:focus{
+    color: #2196F3;
+}
 
 .header-container{
     display: flex;
@@ -109,14 +120,28 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-link:focus,
 .header-nav:hover,
 .header-nav:focus,
-.header-icon:hover,
-.header-icon:focus,
 .footer-adress:hover,
 .footer-adress:focus,
 .footer-nav:hover,
 .footer-nav:focus{
     color: var(--button-color);
     fill: #2196F3;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-nav:hover,
+.header-nav:focus,
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-nav:hover,
+.footer-nav:focus,
+.head:hover,
+.head:focus,
+.footer-head:hover,
+.footer-head:focus{
+    padding-bottom: 0px;
+    border-bottom: 2px solid #2196F3;
 }
 
 .class-item{
@@ -150,6 +175,12 @@ p, h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0px;
+    cursor: pointer;
+}
+
+.header-button:hover,
+.header-button:focus{
+
 }
 
 .section1{
@@ -275,6 +306,9 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-right: 15px;
     padding-bottom: 30px;
     padding-left: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-name {
@@ -354,12 +388,16 @@ p, h1, h2, h3, h4, h5, h6 {
     border-style: none solid solid solid;
 }
 
-.list-item:focus,
-.list-item:hover{
+.donelist-list:focus,
+.donelist-list:hover{
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.donelist-list{
+    display: inline-block;
 }
 
 .head-btn:hover, 
