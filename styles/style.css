@@ -67,6 +67,10 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--navi-color);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .visually-hidden {
@@ -85,14 +89,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-list{
     display: flex;
     column-gap: 50px;
-
 }
 
 .header-icon{
-    color: #757575;
-    fill: currentColor;
     margin-right: 10px;
-
 }
 
 .header-icon:hover,
@@ -125,23 +125,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-nav:hover,
 .footer-nav:focus{
     color: var(--button-color);
-    fill: #2196F3;
-}
-
-.header-link:hover,
-.header-link:focus,
-.header-nav:hover,
-.header-nav:focus,
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-nav:hover,
-.footer-nav:focus,
-.head:hover,
-.head:focus,
-.footer-head:hover,
-.footer-head:focus{
-    padding-bottom: 0px;
-    border-bottom: 2px solid #2196F3;
 }
 
 .class-item{
@@ -180,7 +163,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header-button:hover,
 .header-button:focus{
-
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .section1{
@@ -345,21 +330,17 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #AFB1B8;
+    fill: currentColor;
+
 }
 
 .team-soc-link:hover, 
 .team-soc-link:focus{
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 
-.team-soc-link:hover .barbers-soc,
-.team-soc-link:focus .barbers-soc{
-    fill: #ffffff;
-}
-
-.barbers-soc{
-    fill: #AFB1B8;
-}
 
 .buttons-done{
     padding-top: 94px;
@@ -573,9 +554,5 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: #2196F3;
-}
-
-.footer-soc-link:hover .barbers-soc,
-.footer-soc-link:focus .barbers-soc {
     fill: #ffffff;
 }
