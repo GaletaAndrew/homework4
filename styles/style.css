@@ -71,6 +71,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -93,6 +94,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header-icon{
     margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon:hover,
@@ -114,6 +116,38 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.12;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-now{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-now::after{
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 28px;
+}
+
+.header-now2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-now2::after {
+    content: "";
+    width: 78px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 28px;
 }
 
 .header-link:hover,
@@ -159,13 +193,50 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     border: 0px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-button:hover,
 .header-button:focus{
-    background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #188CE8;
+}
+
+.backdrop{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+}
+
+.modal-close{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .section1{
@@ -237,6 +308,10 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
+.wedo{
+    position: relative;
+}
+
 .wedolist{
     display: flex;
     justify-content: space-between;
@@ -256,9 +331,25 @@ p, h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.wedo-img{
+
+
+.wedo-name{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 370px;
-    height: 294px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .team-sec{
@@ -332,7 +423,8 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     color: #AFB1B8;
     fill: currentColor;
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover, 
@@ -358,12 +450,70 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
 }
-.donelist-name{
-    padding: 20px 24px;
+
+.donelist-image{
+    position: relative;
+}
+
+.donelist-image::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+
+.donelist-list:hover 
+.donelist-image::before{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.donelist-cont{
+    width: 322px;
+    height: 168px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.donelist-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-size: contain;
+    transform: translateY(140%);
+    opacity: 0;  
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.donelist-list:hover .donelist-text{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.donelist-image:hover::before,
+.donelist-image:focus::before{
+    opacity: 1;
 }
 
 .donelist-name{
+    padding: 20px 24px;
     border-color: #eeeeee;
     border-width: 0px 1px 1px 1px;
     border-style: none solid solid solid;
@@ -379,11 +529,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .donelist-list{
     display: inline-block;
-}
-
-.head-btn:hover, 
-.head-btn:focus{
-    color: var(--button-color);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi-btn{
@@ -398,6 +544,10 @@ p, h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navi-btn:hover, 
@@ -452,6 +602,8 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon{
@@ -479,6 +631,7 @@ p, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     font-style: normal;
     color: var(--second-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adres{
@@ -492,6 +645,7 @@ p, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     font-style: normal;
     color: var(--navi-second-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footerlist{
@@ -549,6 +703,8 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,

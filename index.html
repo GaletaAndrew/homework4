@@ -25,7 +25,7 @@
         <a href="./index.html" class="head"><span class="head-color">Web</span>Studio</a>
         <nav>
             <ul class="header-list list">
-                <li><a href="./index.html" class="header-link link">Студия</a></li>
+                <li><a href="./index.html" class="header-link link header-now">Студия</a></li>
                 <li><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
                 <li><a href="#" class="header-link link">Контакты</a></li>
             </ul>
@@ -56,7 +56,7 @@
  <section class="section1">
     <div class="container hero-container">
         <h1 class="header1">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="header-button">Заказать услуги</button>
+        <button data-modal-open type="button" class="header-button">Заказать услуги</button>
     </div>
  </section>
  <section class="section-character">
@@ -114,14 +114,23 @@
     <div class="container">
         <h2 class="whatwedo">Чем мы занимаемся</h2>
         <ul class="wedolist list">
-            <li class="wedo-img">
+            <li class="wedo">
                 <img src="./images/box1-min.jpg" alt="Человек за комп'ютером">
+                <div class="wedo-name">
+                    <h3>десктопные приложения</h3>
+                </div>
             </li>
-            <li class="wedo-img">
+            <li class="wedo">
                 <img src="./images/box2-min.jpg" alt="Человек с телефоном">
+                <div class="wedo-name">
+                    <h3>мобильные приложения</h3>
+                </div>
             </li>
-            <li class="wedo-img">
+            <li class="wedo">
                 <img src="./images/box3-min.jpg" alt="Человек с планшетом">
+                <div class="wedo-name">
+                    <h3>дизайнерские решения</h3>
+                </div>
             </li>
         </ul>
     </div>
@@ -389,5 +398,13 @@
         </div>
     </div>    
  </footer>
+ <div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button data-modal-close class="modal-close" >
+        <img src="./images/close.png" alt="Х">
+        </button>
+    </div>
+ </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
